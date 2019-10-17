@@ -1,0 +1,15 @@
+{
+    "confirm": "confirm",
+    "yes": "Yes",
+    "no": "No",
+    "App": {
+        "title": "etainclub"
+    },
+    "Home": {
+        "title": "etainclub - Help each other in our village",
+        "introduction": "What is etainclub?",
+        "howto": "Getting Started",
+        "download": "Download App",
+        "stories": "Community Stories"
+    }
+}

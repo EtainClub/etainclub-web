@@ -1,4 +1,5 @@
-import React, {useTranslation} from 'react';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Stories = () => {
     const {t} = useTranslation();

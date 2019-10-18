@@ -5,11 +5,34 @@
     "App": {
         "title": "etainclub"
     },
-    "Home": {
-        "title": "etainclub - Help each other in our village",
+    "Header": {
+        "title": "etainclub - Our Neighbor Help it Forward Movement",
         "introduction": "What is etainclub?",
         "howto": "Getting Started",
         "download": "Download App",
-        "stories": "Community Stories"
+        "stories": "Community Stories",
+        "faq": "FAQ"
+    },
+    "Home": {
+
+    },
+    "Introduction": {
+        "header1": {
+            "title": "Welcome To etainclub",
+            "content1": "We can help our neighbors with our minute ability.",
+            "subcontent1": "At last, we will get helped when we need help. We can change our villages by participating this Help-it-Forward movement."
+        },
+        "header2": {
+            "title": "Help it Forward Movement in Our Villages",
+            "content1": "There can be so many similar cases to help our neighbors in our daily life. You can get helped or you can help others.", 
+            "subcontent1": "You help someone, and then the person helps someone else, and in a short time this movement spreads in a village so that you can get help when you need.", 
+            "subcontent2": "Here are a few example cases:",
+            "list1": "Telling the content of photo (for the low vision, the deaf, elders, and kids)",
+            "list2": "Translating technical documents",
+            "list3": "Searching a term on the Internet",
+            "list4": "Helping to install/setup apps and gadgets",
+            "list5": "Helping to assemble PCs",
+            "list6": "Anything that can be helped"
+        }
     }
 }

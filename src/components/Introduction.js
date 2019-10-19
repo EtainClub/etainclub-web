@@ -1,26 +1,48 @@
 import React from 'react';
 import i18n from "i18next";
 import { useTranslation } from 'react-i18next';
+//
+import image1 from '../images/ko/introduction/contracts_diagram.png';
+import image1M from '../images/ko/introduction/contracts_diagram_m.png';
+import image1_en from '../images/en/introduction/contracts_diagram.png';
+import image1M_en from '../images/en/introduction/contracts_diagram_m.png';
 
 const Introduction = () => {
     const {t} = useTranslation();
     // get current language
     const language = i18n.language;
-    const imgHeight = 700;
-    
+    const mobile = window.innerWidth < 650 ? true : false;
     const showContractDiagram = () => {
+        // default settings
+        let imgUrl = image1;
+        let imgHeight = 700;
         switch (language) {
             case 'ko':
-                return (
-                    <div>
-                        <img alt="contractsDiagram" src={require('../images/ko/howto/contracts_diagram.png') } />
-                    </div>
-                );
+                if (mobile) {
+                    imgUrl = image1M;
+                    imgHeight = 200;
+                }
+                break;
             case 'en':
+                if (mobile) {
+                    imgUrl = image1M_en;
+                    imgHeight = 200;
+                } else {
+                    imgUrl = image1_en;
+                    imgHeight = 700;
+                }
                 break;
             default:
                 break;
-        }        
+        }
+        return (
+            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                <img
+                    height={imgHeight} 
+                    alt="contractsDiagram" 
+                    src={imgUrl} />
+            </div>
+        );
     };
 
     return (
@@ -63,10 +85,7 @@ const styles = {
     container: {
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'left',
-        marginLeft: 200,
-        marginRight: 200,
+        padding: 20
     }
 };
 

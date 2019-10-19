@@ -1,12 +1,21 @@
 import React from 'react';
 import i18n from "i18next";
 import { useTranslation } from 'react-i18next';
+//
+import image1 from '../images/occupation.png';
+import image1M from '../images/occupation_m.png';
 
 const Howto = () => {
     const {t} = useTranslation();
     // get current language
     const language = i18n.language;
-    const imgHeight = 700;
+    const mobile = window.innerWidth < 650 ? true : false;
+    let image1Url = image1;
+    let imgHeight = 700;
+    if (mobile) {
+        image1Url = image1M;
+        imgHeight = 200;
+    } 
     // show howto
     const showHowto = () => {
         switch(language) {
@@ -71,10 +80,7 @@ const styles = {
     container: {
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'left',
-        marginLeft: 200,
-        marginRight: 200,
+        padding: 20,
     },
     rowContainer: {
         display: 'flex',

@@ -5,14 +5,17 @@ const Faq = () => {
     const {t} = useTranslation();
     return (
         <div style={styles.container}>
-            <h1>{t('Faq.header1.title')}</h1>
+            <h2>{t('Faq.header1.title')}</h2>
             <p>{t('Faq.header1.content1')}</p>
-            <h1>{t('Faq.header2.title')}</h1>
+            <h2>{t('Faq.header2.title')}</h2>
             <p>{t('Faq.header2.content1')}</p>
-            <h1>{t('Faq.header3.title')}</h1>
+            <h2>{t('Faq.header3.title')}</h2>
             <p>{t('Faq.header3.content1')}</p>
-            <h1>{t('Faq.header4.title')}</h1>
+            <h2>{t('Faq.header4.title')}</h2>
             <p>{t('Faq.header4.content1')}</p>
+            <h2>{t('Faq.header5.title')}</h2>
+            <p>{t('Faq.header5.content1')}</p>
+            <p>{t('Faq.header5.content2')}</p>
         </div>
 
     );
@@ -22,10 +25,7 @@ const styles = {
     container: {
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'left',
-        marginLeft: 200,
-        marginRight: 200,
+        padding: 20,
     }
 };
 

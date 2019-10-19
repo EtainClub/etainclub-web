@@ -1,13 +1,93 @@
 import React from 'react';
+import i18n from "i18next";
 import { useTranslation } from 'react-i18next';
 
 const Howto = () => {
     const {t} = useTranslation();
+    // get current language
+    const language = i18n.language;
+    const imgHeight = 700;
+    // show howto
+    const showHowto = () => {
+        switch(language) {
+            case 'ko':
+                return (
+                    <div style={styles.rowContainer}>
+                        <div style={styles.columnContainer}>
+                            <img height={imgHeight} src={require('../images/ko/case1/client_1.png')} />
+                            <div style={{paddingBottom: 10}} />
+                            <img height={imgHeight} src={require('../images/ko/case1/client_2.png')} />
+                            <div style={{paddingBottom: 10}} />
+                            <img height={imgHeight} src={require('../images/ko/case1/client_3.png')} />
+                            <div style={{paddingBottom: 10}} />
+                            <img height={imgHeight} src={require('../images/ko/case1/client_3-3.png')} />
+                         </div>
+                         <div style={{ paddingRight: 50}} />
+                         <div style={styles.columnContainer}>
+                            <img height={imgHeight} src={require('../images/ko/case1/etain_1.jpg')} />
+                            <div style={{paddingBottom: 10}} />
+                            <img height={imgHeight} src={require('../images/ko/case1/etain_2.jpg')} />
+                            <div style={{paddingBottom: 10}} />
+                            <img height={imgHeight} src={require('../images/ko/case1/etain_3.jpg')} />
+                         </div>
+                    </div>
+                );
+            case 'en':
+                console.log('english');
+                break;
+            default:
+                console.log('default');
+                break;
+        }
+    };
+
     return (
-        <div>
-            <h1>Howto</h1>
+        <div style={styles.container}>
+            <h2>{t('Howto.header1.title')}</h2>
+            <p>{t('Howto.header1.content1')}</p>
+            <p>{t('Howto.header1.subcontent1')}</p>
+            <ol>
+            <li>{t('Howto.header1.list1')}</li>
+                <li>{t('Howto.header1.list2')}</li>
+                <li>{t('Howto.header1.list3')}</li>
+                <li>{t('Howto.header1.list4')}</li>
+                <li>{t('Howto.header1.list5')}</li>
+            </ol>
+            <div style={styles.rowContainer}>
+                <div style={styles.columnContainer}>
+                    <h2 style={{textAlign: 'center'}}>{t('client')}</h2>
+                </div>
+                <div style={{ paddingRight: 50}} />
+                <div style={styles.columnContainer}>
+                    <h2 style={{textAlign: 'center'}}>{t('etain')}</h2>
+                </div>
+            </div>
+            {showHowto()}
         </div>
     );
+};
+
+const styles = {
+    container: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'left',
+        marginLeft: 200,
+        marginRight: 200,
+    },
+    rowContainer: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        marginRight: 20
+    },
+    columnContainer: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        width: 400,
+    }
 };
 
 export default Howto;

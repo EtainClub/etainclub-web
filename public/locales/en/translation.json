@@ -23,16 +23,40 @@
             "subcontent1": "At last, we will get helped when we need help. We can change our villages by participating this Help-it-Forward movement."
         },
         "header2": {
+            "title": "Our Neighbors for Now",
+            "content1": "There are so many different people in our villages. We have different knowledge and backgrounds. Thus, some people might have difficulty to just search something they don’t know on the Internet, which can be very easy task for someone else. Based on what you type in the search bar, you might not be able to find what you really need."
+        },
+        "header3": {
             "title": "Help it Forward Movement in Our Villages",
-            "content1": "There can be so many similar cases to help our neighbors in our daily life. You can get helped or you can help others.", 
-            "subcontent1": "You help someone, and then the person helps someone else, and in a short time this movement spreads in a village so that you can get help when you need.", 
-            "subcontent2": "Here are a few example cases:",
+            "content1": "There can be so many cases to help or to get helped in our daily life by off-line as well as by on-line.", 
+            "subcontent1": "It is possible because of neighborhoods.", 
+            "subcontent2": "To name a few, the followings are what we can help and get helped:",
             "list1": "Telling the content of photo (for the low vision, the deaf, elders, and kids)",
             "list2": "Translating technical documents",
             "list3": "Searching a term on the Internet",
             "list4": "Helping to install/setup apps and gadgets",
             "list5": "Helping to assemble PCs",
             "list6": "Anything that can be helped"
+        },
+        "header4": {
+            "title": "Safer Helping Movment",
+            "content1": "You might be reluctanct to let an unknown come your house to help you. What if the person is your neighbor? Yes, You might be less worried. Location authentication is one of key functions. But etainclub consider more functions to the safer helping movement.",
+            "list1": "Location-based Authentication: Helps by off-line should be restricted within a region",
+            "list2": "Identity Verification: Use blockchain not to manipulatre user's profile and information.",
+            "list3": "Help Verification: Record helping activities on blockchain. The activities cannot be manipulated",
+            "content2": "The blockchain things will be implemented in near future. The following diagram is an overview of the implementation."
+        }
+    },
+    "Howto": {
+        "header1": {
+            "title": "How to Use App",
+            "content1": "It is very simple. Like a Uber app, you send a help-wanted message, then you are connected to anyone wants to help first.",
+            "subcontent1": "You can attach photos to explain your situation more clearly.",
+            "list1": "[client] Type what you need to be helped and press the 'Help' button",
+            "list2": "[client] Now you wait for a helper or you may cancel the request.",
+            "list3": "[helper] As a helper you will get a notification. If you open the notification, you decide to accept or to deny the request.",
+            "list4": "[helper] If you accept the request, you are connected to the client through 1 on 1 chatting.",
+            "list5": "[client, helper] Both client and helper discuss the details and decide how to help and get helped."
         }
     }
 }

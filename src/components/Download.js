@@ -121,6 +121,11 @@ const Download = () => {
                 break;
         }
         return (
+            <div>
+                <h1 style={{ textAlign: 'center', color: 'red' }}>{t('Download.notice')}</h1>
+                <h2 style={{ textAlign: 'center', color: 'blue' }}>{t('Download.noticeContent1')}</h2>
+                <h3 style={{ textAlign: 'center', color: 'black' }}>{t('Download.noticeContent2')}</h3>
+                <hr />
             <div style={styles.rowContainer}>
                 <div style={styles.columnContainer}>
                     <h2 style={{ textAlign: 'center' }}>{t('Download.android')}</h2>
@@ -159,6 +164,8 @@ const Download = () => {
                     </Button>  
                 </div>
             </div>
+            </div>
+
         );
     }
 

@@ -18,6 +18,18 @@ const Stories = () => {
         imgHeight = 200;
     } 
     const renderImage = () => {
+        if (language == 'ko') {
+            return (
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+                >
+                <img
+                    height={imgHeight} 
+                    alt="helpingHeart" 
+                    src={imgUrl} />
+                    <h3>{t('Stories.proverb')}</h3>
+                </div>
+            );
+        }
         return (
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
             <img
@@ -25,7 +37,7 @@ const Stories = () => {
                 alt="helpingHeart" 
                 src={imgUrl} />
             </div>
-        );
+        );    
     };
 
     const visitNaverCafe = () => {

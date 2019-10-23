@@ -2,11 +2,13 @@
     "confirm": "confirm",
     "yes": "Yes",
     "no": "No",
+    "client": "client",
+    "etain": "etain (helper)",
     "App": {
         "title": "etainclub"
     },
     "Header": {
-        "title": "etainclub - Our Neighbor Help it Forward Movement",
+        "title": "etainclub - Help it Forward Movement in Our Town",
         "introduction": "What is etainclub?",
         "howto": "Getting Started",
         "download": "Download App",
@@ -24,10 +26,10 @@
         },
         "header2": {
             "title": "Our Neighbors for Now",
-            "content1": "There are so many different people in our villages. We have different knowledge and backgrounds. Thus, some people might have difficulty to just search something they don’t know on the Internet, which can be very easy task for someone else. Based on what you type in the search bar, you might not be able to find what you really need."
+            "content1": "There are so many different people in our towns. We have different knowledge and backgrounds. Thus, some people might have difficulty to just search something they don’t know on the Internet, which can be very easy task for someone else. Based on what you type in the search bar, you might not be able to find what you really need."
         },
         "header3": {
-            "title": "Help it Forward Movement in Our Villages",
+            "title": "Help it Forward Movement in Our Towns",
             "content1": "There can be so many cases to help or to get helped in our daily life by off-line as well as by on-line.", 
             "subcontent1": "It is possible because of neighborhoods.", 
             "subcontent2": "To name a few, the followings are what we can help and get helped:",
@@ -58,5 +60,60 @@
             "list4": "[helper] If you accept the request, you are connected to the client through 1 on 1 chatting.",
             "list5": "[client, helper] Both client and helper discuss the details and decide how to help and get helped."
         }
+    },
+    "Stories": {
+        "title": "Community Stroies",
+        "facebookGroup": "Visit Facebook Group",
+        "naverCafe": "Visit Naver Cafe"
+    },
+    "Faq": {
+        "header1": {
+            "title": "What is etainclub?",
+            "content1": "'etain' means a person who helps others in Korean. So 'etainclub' is a club of etains. etainclub is insipred by 'Be My Eyes' which connects the blind and a volunteer. There are people feeling happy when they help others. These are called 'etains'. There are also people having troubles with their problems such as install apps and 'don-know-what-do-do'. etainclub matches people wanting to help and people needing to get helped." 
+        },
+        "header2": {
+            "title": "What are the differences with existing Question-Answer platforms?",
+            "content1": "Most exisitng platforms are just ask-and-answer. Even though this platform is working but sometimes it is not a true solution for people who do not know what to do to solve theire peroblems. etainclub aims that people consider the problems as their own problems based on neighborhoods.", 
+            "content2": "etainclub club aims at 'help it forward' movement in our villages, so you help others and then you get helped.", 
+            "content3": "Using etainclub app, you can ask help anytime we want and also you can help whenever you are available. It is like a using an app calling a taxi."
+        },
+        "header3": {
+            "title": "What are benefits for etains (helpers)?",
+            "content1": "etainclub is managed by volunteers who want to help their neighbors without any rewards. Thus, etains (helpers) do not request any rewards. Also the clients do not have to pay anything. etainclub is a free service.", 
+            "content2": "In some cases, the quality of help is good enough, or it might not be satisfying in other cases. Clients can neither push the etains nor to put responsibility on them.",
+            "content3": "In future, etainclub will use a blockchain-based token to increase transparency and safety. In this case, etains can get token reward."
+        },
+        "header4": {
+            "title": "How to prevent people from abusing help?",
+            "content1": "There are chances that some people do exploitation. A malicious person tries to obtain personal information and use it badly. You as an app user should be cautious.",
+            "content2": "Things that you should not do with etainclub app:",
+            "list1": "Displaying card numer, passort number, bank account pasword or other personal information", 
+            "list2": "Sharing telephone/cellphone number unless you trust the other",
+            "list3": "Sending sexual or hateful photos", 
+            "content3": "If you really get helped, then please vote for etains and share your story on community group. These are the most effective ways to prevent the abusing.",
+            "content4": "For safer and more transperent, the following functions will be implemented:",
+            "list4": "Location-based authentication. This information will be recorded on a blockchain.",
+            "list5": "Asking and helping activities will be recorded on a blockchain.",
+            "list6": "Votes will be recorded on a blockchain.",
+            "list7": "Users share their helped stories on community group as well as helping stories.",
+            "list8": "If you have better ideas or suggestions, please share them on community group."         
+        },
+        "header5": {
+            "title": "Do Not Disturb Setting",
+            "content1": "For now, it is not avaliable to set do-not-disturb times. This function is plan to implemente in future.",
+            "content2": "If you do not want to get notification during spefic times, please use phone's do-not-disturb setting."
+        }
+    },
+    "Download": {
+        "title": "App Download",
+        "notice": "Notice",
+        "noticeContent1": "During beta test, downloads are available only through files.",
+        "noticeContent2": "You can install the app through Google Market or App Store after beta test.",
+        "android": "Android",
+        "ios": "iPhone (Coming soon)",
+        "download32": "32bit Download",
+        "download64": "64bit Download",
+        "androidInstall": "How to install the app for Android phones",
+        "setting": "Settings -> Biometrics and security -> Install unkonw apps"
     }
 }

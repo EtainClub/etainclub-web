@@ -18,7 +18,7 @@ const Stories = () => {
         imgHeight = 200;
     } 
     const renderImage = () => {
-        if (language == 'ko') {
+        if (language === 'ko') {
             return (
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
                 >
@@ -47,7 +47,7 @@ const Stories = () => {
     };
 
     const renderNaverButton = () => {
-        if (language == 'ko') {
+        if (language === 'ko') {
             return (
                 <Button
                     style={{ margin: 7, backgroundColor: 'green' }}

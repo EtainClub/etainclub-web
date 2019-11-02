@@ -23,7 +23,13 @@ import imageIOS1 from '../images/ko/download/ios.png';
 import imageIOS1M from '../images/ko/download/ios.png';
 
 // english android
+import imageEN1 from '../images/en/download/android_m.png';
+import imageEN1M from '../images/en/download/ios.png';
+
 // english ios
+import imageENIOS1 from '../images/en/download/ios.png';
+import imageENIOS1M from '../images/en/download/ios.png';
+
 //import image1_en from '../images/en/download/android_install.png';
 //import image1M_en from '../images/en/download/contracts_diagram_m.png';
 
@@ -114,6 +120,14 @@ const Download = () => {
                 }
                 break;
             case 'en':
+                if (mobile) {
+                    img1Url = imageEN1M;
+                    img2Url = imageENIOS1M;
+                    imgHeight = 300;
+                } else {
+                    img1Url = imageEN1;
+                    img2Url = imageENIOS1;            
+                }                    
                 console.log('english');
                 break;
             default:

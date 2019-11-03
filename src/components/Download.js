@@ -47,6 +47,12 @@ const Download = () => {
         link.click();
     };
 
+    const downloadIOS = () => {
+        var link = document.createElement("a");
+        link.href = "https://testflight.apple.com/join/U48E0Oq8";
+        link.click();
+    }
+
     // get current language
     const language = i18n.language;
     const imgHeight = 700;
@@ -163,19 +169,12 @@ const Download = () => {
                     <h2 style={{ textAlign: 'center' }}>{t('Download.ios')}</h2>
                     <img alt="" height={imgHeight} src={img2Url}/>
                     <Button 
-                        disabled 
                         primary 
                         style={{ margin: 7 }}
+                        onClick={downloadIOS}
                     >
-                        {t('Download.download64')}
+                        {t('download')}
                     </Button>
-                    <Button 
-                        disabled 
-                        primary 
-                        style={{ margin: 7 }}
-                    >
-                        {t('Download.download32')}
-                    </Button>  
                 </div>
             </div>
             </div>

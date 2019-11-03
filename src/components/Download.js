@@ -31,13 +31,13 @@ const Download = () => {
     const {t} = useTranslation();
     const downloadAndroid64 = () => {
         var link = document.createElement("a");
-        link.href = "https://firebasestorage.googleapis.com/v0/b/etainclub-896c9.appspot.com/o/apk%2Fetainclub-arm64-v8a-release.apk?alt=media&token=27743058-0746-4643-8165-5020dd0a47f9";
+        link.href = "https://firebasestorage.googleapis.com/v0/b/etainclub-896c9.appspot.com/o/apk%2Fapp-arm64-v8a-release.apk?alt=media&token=cd53a8f4-bd1f-41e3-b676-e9ad53d17c58";
         link.click();
     };
 
     const downloadAndroid32 = () => {
         var link = document.createElement("a");
-        link.href = "https://firebasestorage.googleapis.com/v0/b/etainclub-896c9.appspot.com/o/apk%2Fetainclub-armeabi-v7a-release.apk?alt=media&token=84ec176e-8cd0-4cf0-b10b-b84bf03da847";
+        link.href = "https://firebasestorage.googleapis.com/v0/b/etainclub-896c9.appspot.com/o/apk%2Fapp-armeabi-v7a-release.apk?alt=media&token=d4c7f859-faf7-4739-b9fb-1ea28a32fd1a";
         link.click();
     };
 

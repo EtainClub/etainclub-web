@@ -30,20 +30,39 @@ const Howto = () => {
                             <img height={imgHeight} src={require('../images/ko/case1/client_3.png')} />
                             <div style={{paddingBottom: 10}} />
                             <img height={imgHeight} src={require('../images/ko/case1/client_3-3.png')} />
-                         </div>
-                         <div style={{ paddingRight: 50}} />
-                         <div style={styles.columnContainer}>
+                            </div>
+                            <div style={{ paddingRight: 50}} />
+                            <div style={styles.columnContainer}>
                             <img height={imgHeight} src={require('../images/ko/case1/etain_1.jpg')} />
                             <div style={{paddingBottom: 10}} />
                             <img height={imgHeight} src={require('../images/ko/case1/etain_2.jpg')} />
                             <div style={{paddingBottom: 10}} />
                             <img height={imgHeight} src={require('../images/ko/case1/etain_3.jpg')} />
-                         </div>
+                            </div>
                     </div>
                 );
             case 'en':
-                console.log('english');
-                break;
+                return (
+                    <div style={styles.rowContainer}>
+                        <div style={styles.columnContainer}>
+                            <img height={imgHeight} src={require('../images/en/case1/client_1.png')} />
+                            <div style={{paddingBottom: 10}} />
+                            <img height={imgHeight} src={require('../images/en/case1/client_2.png')} />
+                            <div style={{paddingBottom: 10}} />
+                            <img height={imgHeight} src={require('../images/en/case1/client_3.png')} />
+                            <div style={{paddingBottom: 10}} />
+                            <img height={imgHeight} src={require('../images/en/case1/client_3-3.png')} />
+                            </div>
+                            <div style={{ paddingRight: 50}} />
+                            <div style={styles.columnContainer}>
+                            <img height={imgHeight} src={require('../images/en/case1/etain_1.png')} />
+                            <div style={{paddingBottom: 10}} />
+                            <img height={imgHeight} src={require('../images/en/case1/etain_2.png')} />
+                            <div style={{paddingBottom: 10}} />
+                            <img height={imgHeight} src={require('../images/en/case1/etain_3.png')} />
+                            </div>
+                    </div>
+                );
             default:
                 console.log('default');
                 break;

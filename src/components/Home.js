@@ -1,22 +1,54 @@
 import React from 'react';
+import i18n from "i18next";
 import { useTranslation } from 'react-i18next';
 
+//// images
+// korean
 import image1 from '../images/occupation.png';
+import image2 from '../images/ko/home/android.jpg';
+// korean mobile
 import image1M from '../images/occupation_m.png';
-import image2 from '../images/android.jpg';
-import image2M from '../images/android_m.jpg';
-
+import image2M from '../images/ko/home/android_m.jpg';
+// english
+import imageEN1 from '../images/occupation.png';
+import imageEN2 from '../images/en/home/ios.png';
+// korean mobile
+import imageEN1M from '../images/occupation_m.png';
+import imageEN2M from '../images/en/home/ios.png';
 
 const Home = () => {
     const {t} = useTranslation();
+    // get current language
+    const language = i18n.language;
     const mobile = window.innerWidth < 650 ? true : false;
-    let image1Url = image1;
-    let image2Url = image2;
-    if (mobile) {
-        image1Url = image1M;
-        image2Url = image2M;
-    } 
+//    const mobile = true;
+    
+    
+    // render images
     const renderImages = () => {
+        // default image url : korean web
+        let image1Url = image1;
+        let image2Url = image2;
+        switch (language) {
+            case 'ko':
+                if (mobile) {
+                    image1Url = image1M;
+                    image2Url = image2M;
+                }
+                break;
+            case 'en':
+                if (mobile) {
+                    image1Url = imageEN1M;
+                    image2Url = imageEN2M;
+                } else {
+                    image1Url = imageEN1;
+                    image2Url = imageEN2;
+                }
+                break;
+            default: 
+                break;
+        }
+
         if (mobile) {
             return (
                 <div>
@@ -32,7 +64,7 @@ const Home = () => {
                             src={image2Url} 
                         />
                     </div>
-                    <h2 style={{ textAlign: 'center' }}>How Does This Work? See Be My Eyes Video</h2>
+                    <h2 style={{ textAlign: 'center' }}>{t('Home.videoTitle')}</h2>
                     <div style={styles.video}>
                         <iframe
                             width="400" 
@@ -60,7 +92,7 @@ const Home = () => {
                         src={image2Url} 
                     />
                 </div>
-                <h2 style={{ textAlign: 'center' }}>How Does This work? See Be My Eyes Video</h2>
+                <h2 style={{ textAlign: 'center' }}>{t('Home.videoTitle')}</h2>
                 <div style={styles.video}>
                     <iframe
                         width="560" 

@@ -23,8 +23,8 @@ import imageIOS1 from '../images/ko/download/ios.png';
 import imageIOS1M from '../images/ko/download/ios.png';
 
 // english android
-import imageEN1 from '../images/en/download/android_m.png';
-import imageEN1M from '../images/en/download/ios.png';
+import imageEN1 from '../images/en/download/android.jpg';
+import imageEN1M from '../images/en/download/android_m.png';
 
 // english ios
 import imageENIOS1 from '../images/en/download/ios.png';

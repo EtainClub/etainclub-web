@@ -18,7 +18,7 @@
         "language": "언어"
     },
     "Home": {
-
+        "videoTitle": "How Does This Work? See Be My Eyes Video"
     },
     "Introduction": {
         "header1": {
@@ -112,7 +112,7 @@
         "noticeContent1": "During beta test, downloads are available only through files.",
         "noticeContent2": "You can install the app through Google Market or App Store after beta test.",
         "android": "Android",
-        "ios": "iPhone (Coming soon)",
+        "ios": "iPhone",
         "download32": "32bit Download",
         "download64": "64bit Download",
         "androidInstall": "How to install the app for Android phones",

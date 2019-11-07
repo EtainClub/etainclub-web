@@ -37,13 +37,15 @@ const Download = () => {
     const {t} = useTranslation();
     const downloadAndroid64 = () => {
         var link = document.createElement("a");
-        link.href = "https://firebasestorage.googleapis.com/v0/b/etainclub-896c9.appspot.com/o/apk%2Fetainclub-arm64-v8a-release.apk?alt=media&token=27743058-0746-4643-8165-5020dd0a47f9";
+        // v0.1.2
+        link.href = "https://firebasestorage.googleapis.com/v0/b/etainclub-896c9.appspot.com/o/apk%2Fetainclub-arm64-v8a-release.apk?alt=media&token=3cd67805-bd63-40ad-8320-2c06e448001a";
         link.click();
     };
 
     const downloadAndroid32 = () => {
         var link = document.createElement("a");
-        link.href = "https://firebasestorage.googleapis.com/v0/b/etainclub-896c9.appspot.com/o/apk%2Fetainclub-armeabi-v7a-release.apk?alt=media&token=84ec176e-8cd0-4cf0-b10b-b84bf03da847";
+        // v0.1.2
+        link.href = "https://firebasestorage.googleapis.com/v0/b/etainclub-896c9.appspot.com/o/apk%2Fetainclub-armeabi-v7a-release.apk?alt=media&token=1f76ff54-c372-43c2-ac0f-212bf8ef4b92";
         link.click();
     };
 
@@ -139,6 +141,7 @@ const Download = () => {
                 <h1 style={{ textAlign: 'center', color: 'red' }}>{t('Download.notice')}</h1>
                 <h2 style={{ textAlign: 'center', color: 'blue' }}>{t('Download.noticeContent1')}</h2>
                 <h3 style={{ textAlign: 'center', color: 'black' }}>{t('Download.noticeContent2')}</h3>
+                <h3 style={{ textAlign: 'center', color: 'black' }}>{t('Download.versionInfo')}</h3>
                 <hr />
             <div style={styles.rowContainer}>
                 <div style={styles.columnContainer}>

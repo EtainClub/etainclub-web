@@ -4,6 +4,7 @@
     "no": "No",
     "client": "client",
     "etain": "etain (helper)",
+    "download": "Download",
     "App": {
         "title": "etainclub"
     },
@@ -17,7 +18,7 @@
         "language": "언어"
     },
     "Home": {
-
+        "videoTitle": "How Does This Work? See Be My Eyes Video"
     },
     "Introduction": {
         "header1": {

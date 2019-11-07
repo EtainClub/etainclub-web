@@ -23,8 +23,8 @@ import imageIOS1 from '../images/ko/download/ios.png';
 import imageIOS1M from '../images/ko/download/ios.png';
 
 // english android
-import imageEN1 from '../images/en/download/android_m.png';
-import imageEN1M from '../images/en/download/ios.png';
+import imageEN1 from '../images/en/download/android.jpg';
+import imageEN1M from '../images/en/download/android_m.png';
 
 // english ios
 import imageENIOS1 from '../images/en/download/ios.png';
@@ -48,6 +48,12 @@ const Download = () => {
         link.href = "https://firebasestorage.googleapis.com/v0/b/etainclub-896c9.appspot.com/o/apk%2Fetainclub-armeabi-v7a-release.apk?alt=media&token=1f76ff54-c372-43c2-ac0f-212bf8ef4b92";
         link.click();
     };
+
+    const downloadIOS = () => {
+        var link = document.createElement("a");
+        link.href = "https://testflight.apple.com/join/U48E0Oq8";
+        link.click();
+    }
 
     // get current language
     const language = i18n.language;
@@ -166,19 +172,12 @@ const Download = () => {
                     <h2 style={{ textAlign: 'center' }}>{t('Download.ios')}</h2>
                     <img alt="" height={imgHeight} src={img2Url}/>
                     <Button 
-                        disabled 
                         primary 
                         style={{ margin: 7 }}
+                        onClick={downloadIOS}
                     >
-                        {t('Download.download64')}
+                        {t('download')}
                     </Button>
-                    <Button 
-                        disabled 
-                        primary 
-                        style={{ margin: 7 }}
-                    >
-                        {t('Download.download32')}
-                    </Button>  
                 </div>
             </div>
             </div>

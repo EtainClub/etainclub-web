@@ -186,7 +186,7 @@ const Download = () => {
     }
 
     return (
-        <div>
+        <div style={styles.container}>
             {showDevices()}
             {showInstall()}
         </div>
@@ -194,6 +194,14 @@ const Download = () => {
 };
 
 const styles = {
+    container: {
+        display: 'flex',
+        flexDirection: 'column',
+        padding: 20,
+        maxWidth: 600,
+        marginLeft: 'auto',
+        marginRight: 'auto'
+    },
     rowContainer: {
         display: 'flex',
         flexDirection: 'row',

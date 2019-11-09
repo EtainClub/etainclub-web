@@ -10,6 +10,7 @@ import Howto from './Howto';
 import Stories from './Stories';
 import Download from './Download';
 import Faq from './Faq';
+import Resources from './Resources';
 
 const App = () => {
     return (
@@ -21,6 +22,7 @@ const App = () => {
                     <Route exact path="/introduction" component={Introduction} />
                     <Route exact path="/howto" component={Howto} />
                     <Route exact path="/stories" component={Stories} />
+                    <Route exact path="/resources" component={Resources} />
                     <Route exact path="/faq" component={Faq} />
                     <Route exact path="/download" component={Download} />
                 </Suspense>

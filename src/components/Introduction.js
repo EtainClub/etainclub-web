@@ -6,6 +6,9 @@ import image1 from '../images/ko/introduction/contracts_diagram.png';
 import image1M from '../images/ko/introduction/contracts_diagram_m.png';
 import image1_en from '../images/en/introduction/contracts_diagram.png';
 import image1M_en from '../images/en/introduction/contracts_diagram_m.png';
+import image2 from '../images/en/introduction/kindspring.png';
+import image2M from '../images/en/introduction/kindspring_m.png';
+
 
 const Introduction = () => {
     const {t} = useTranslation();
@@ -15,21 +18,21 @@ const Introduction = () => {
     const showContractDiagram = () => {
         // default settings
         let imgUrl = image1;
-        let imgHeight = 700;
+        let imgWidth = 600;
         switch (language) {
             case 'ko':
                 if (mobile) {
                     imgUrl = image1M;
-                    imgHeight = 200;
+                    imgWidth = 200;
                 }
                 break;
             case 'en':
                 if (mobile) {
                     imgUrl = image1M_en;
-                    imgHeight = 200;
+                    imgWidth = 200;
                 } else {
                     imgUrl = image1_en;
-                    imgHeight = 700;
+                    imgWidth = 600;
                 }
                 break;
             default:
@@ -38,12 +41,35 @@ const Introduction = () => {
         return (
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
                 <img
-                    height={imgHeight} 
+                    width={imgWidth} 
                     alt="contractsDiagram" 
                     src={imgUrl} />
             </div>
         );
     };
+
+    const showKindSpring = () => {
+        // default settings
+        let imgUrl = image2;
+        let imgWidth = 600;
+        if (mobile) {
+            imgUrl = image2M;
+            imgWidth = 200;
+        }
+        return (
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} >
+                <br />
+                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                    <img
+                        width={imgWidth} 
+                        alt="kindspring" 
+                        src={imgUrl} />
+                </div>
+                <a href="https://www.kindspring.org">KindSpring</a>
+                <br />
+            </div>
+        );
+    }
 
     return (
         <div style={styles.container}>
@@ -55,6 +81,10 @@ const Introduction = () => {
             <p>{t('Introduction.header2.content1')}</p>
 
             <h2>{t('Introduction.header3.title')}</h2>
+            <p>{t('Introduction.header3.content2')}</p>
+            <p>{t('Introduction.header3.subcontent2-1')}</p>
+            {showKindSpring()}
+
             <p>{t('Introduction.header3.content1')}</p>
             <p>{t('Introduction.header3.subcontent1')}</p>
             <p>{t('Introduction.header3.subcontent2')}</p>
@@ -66,6 +96,8 @@ const Introduction = () => {
                 <li>{t('Introduction.header3.list5')}</li>
                 <li>{t('Introduction.header3.list6')}</li>
             </ul>
+            <p>{t('Introduction.header3.content2')}</p>
+
 
             <h2>{t('Introduction.header4.title')}</h2>
             <p>{t('Introduction.header4.content1')}</p>
@@ -85,8 +117,11 @@ const styles = {
     container: {
         display: 'flex',
         flexDirection: 'column',
-        padding: 20
-    }
+        padding: 20,
+        maxWidth: 600,
+        marginLeft: 'auto',
+        marginRight: 'auto'
+    },
 };
 
 export default Introduction;

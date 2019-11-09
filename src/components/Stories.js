@@ -67,7 +67,7 @@ const Stories = () => {
     };
 
     return (
-        <div>
+        <div style={styles.container}>
             <h2 style={{ textAlign: 'center' }}>{t('Stories.title')}</h2>
             {renderImage()}
             <hr />
@@ -88,6 +88,14 @@ const Stories = () => {
 };
 
 const styles = {
+    container: {
+        display: 'flex',
+        flexDirection: 'column',
+        padding: 20,
+        maxWidth: 600,
+        marginLeft: 'auto',
+        marginRight: 'auto'
+    },
     button: {
         display: 'flex',
         justifyContent: 'center'

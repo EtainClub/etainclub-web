@@ -49,6 +49,9 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         padding: 20,
+        maxWidth: 600,
+        marginLeft: 'auto',
+        marginRight: 'auto'
     }
 };
 

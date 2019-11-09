@@ -14,6 +14,7 @@
         "howto": "Getting Started",
         "download": "Download App",
         "stories": "Community Stories",
+        "resources": "Resources",
         "faq": "FAQ",
         "language": "언어"
     },
@@ -32,6 +33,8 @@
         },
         "header3": {
             "title": "Help it Forward Movement in Our Towns",
+            "content2": "There is an organization called 'Kindspring' where they try to change our world with small good acts. They are doing 'Pay it Forward' movement which is literally paying food or beverage fee for the person who comes next.", 
+            "subcontent2-1" : "Extending concept of this is 'Help it Forward' movement. Simply it is that if you get helped, you help another. Then, the more helping acts are created, the stronger a virtuous cycle of helping becomes",
             "content1": "There can be so many cases to help or to get helped in our daily life by off-line as well as by on-line.", 
             "subcontent1": "It is possible because of neighborhoods.", 
             "subcontent2": "To name a few, the followings are what we can help and get helped:",
@@ -67,6 +70,28 @@
         "title": "Community Stroies",
         "facebookGroup": "Visit Facebook Group",
         "naverCafe": "Visit Naver Cafe"
+    },
+    "Resources": {
+        "header1": {
+            "title": "Source Codes",
+            "list1-1": "Homepage Code",
+            "list1-2": "App Code"
+        },
+        "header2": {
+            "title": "Social Media",
+            "list2-1": "Facebook Page",
+            "list2-2": "Facebook Group",
+            "list2-3": "Steemit",
+            "list2-4": "Medium",
+            "list2-5": "Naver Cafe (Korean)", 
+            "list2-6": "Opentutorials (Korean)", 
+            "list2-7": "Twitter @etainclub",           
+            "list2-8": "Youtube Channel"
+        },
+        "header3": {
+            "title": "뉴스룸",
+            "list3-1": "etainclub@gmail.com으로 연락주세요."
+        }
     },
     "Faq": {
         "header1": {

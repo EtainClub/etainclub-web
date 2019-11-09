@@ -75,6 +75,15 @@ const Header = () => {
           </Menu.Item>
 
           <Menu.Item
+            as={Link} to='/resources'
+            name='resources'
+            active={activeItem === 'resources'}
+            onClick={onMenuClick}
+          >
+              {t('Header.resources')}
+          </Menu.Item>
+
+          <Menu.Item
             as={Link} to='/faq'
             name='faq'
             active={activeItem === 'faq'}

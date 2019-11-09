@@ -8,7 +8,8 @@ import image1_en from '../images/en/introduction/contracts_diagram.png';
 import image1M_en from '../images/en/introduction/contracts_diagram_m.png';
 import image2 from '../images/en/introduction/kindspring.png';
 import image2M from '../images/en/introduction/kindspring_m.png';
-
+import image3 from '../images/en/introduction/location_verify.png';
+import image3M from '../images/en/introduction/location_verify_m.png';
 
 const Introduction = () => {
     const {t} = useTranslation();
@@ -71,6 +72,27 @@ const Introduction = () => {
         );
     }
 
+    const showLocationVerify = () => {
+        // default settings
+        let imgUrl = image3;
+        let imgWidth = 500;
+        if (mobile) {
+            imgUrl = image3M;
+            imgWidth = 200;
+        }
+        return (
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} >
+                <br />
+                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                    <img
+                        width={imgWidth} 
+                        alt="kindspring" 
+                        src={imgUrl} />
+                </div>
+            </div>
+        );
+    }
+
     return (
         <div style={styles.container}>
             <h2>{t('Introduction.header1.title')}</h2>
@@ -106,6 +128,7 @@ const Introduction = () => {
                 <li>{t('Introduction.header4.list2')}</li>
                 <li>{t('Introduction.header4.list3')}</li>
             </ol>
+            {showLocationVerify()}
             <p>{t('Introduction.header4.content2')}</p>
             <div style={{ paddingBottom: 20 }} />
             {showContractDiagram()}

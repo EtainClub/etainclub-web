@@ -31,7 +31,7 @@ const Header = () => {
             onClick={onMenuClick}
         >
             <img alt="logo" src='../logo.png' />
-            <h3 style={{margin: 0}}>{t('Header.title')}</h3>
+            <h3 style={{ margin: 0, marginLeft: 5 }}>{t('Header.title')}</h3>
         </Menu.Item>
 
         <Menu.Menu position='right'>

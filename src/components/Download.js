@@ -51,7 +51,7 @@ const Download = () => {
 
     const downloadIOS = () => {
         var link = document.createElement("a");
-        link.href = "https://testflight.apple.com/join/U48E0Oq8";
+        link.href = "https://testflight.apple.com/join/3JdIg0MP";
         link.click();
     }
 

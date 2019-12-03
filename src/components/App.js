@@ -11,6 +11,8 @@ import Stories from './Stories';
 import Download from './Download';
 import Faq from './Faq';
 import Resources from './Resources';
+// temp
+import Download2 from './Download2';
 
 const App = () => {
     return (
@@ -25,6 +27,7 @@ const App = () => {
                     <Route exact path="/resources" component={Resources} />
                     <Route exact path="/faq" component={Faq} />
                     <Route exact path="/download" component={Download} />
+                    <Route exact path="/download2" component={Download2} />
                 </Suspense>
             </div>
         </BrowserRouter>

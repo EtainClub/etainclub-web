@@ -11,6 +11,11 @@ import Stories from './Stories';
 import Download from './Download';
 import Faq from './Faq';
 import Resources from './Resources';
+import Terms from './Terms';
+import TermsEN from './Terms-en';
+import Privacy from './Privacy';
+import PrivacyEN from './Privacy-en';
+
 // temp
 import Download2 from './Download2';
 
@@ -28,6 +33,10 @@ const App = () => {
                     <Route exact path="/faq" component={Faq} />
                     <Route exact path="/download" component={Download} />
                     <Route exact path="/download2" component={Download2} />
+                    <Route exact path="/terms" component={Terms} />
+                    <Route exact path="/terms-en" component={TermsEN} />
+                    <Route exact path="/privacy" component={Privacy} />
+                    <Route exact path="/privacy-en" component={PrivacyEN} />
                 </Suspense>
             </div>
         </BrowserRouter>

@@ -6,68 +6,77 @@ const PrivacyEN = () => {
     return (
         <div style={styles.container}>
             <h1>Privacy Policy</h1>
+            <p>Effective Date: 1 January 2020</p>
             <p>
-                helpus는 정보통신망 이용촉진 및 정보보호 등에 관한 법률, 개인정보보호법, 통신비밀보호법, 전기통신사업법, 등 
-                정보통신서비스제공자가 준수하여야 할 관련 법령상의 개인정보보호 규정을 준수하며, 
-                관련 법령에 의거한 개인정보취급방침을 정하여 이용자 권익 보호에 최선을 다하겠습니다.
+                This Privacy Policy sets out the terms under which Accessibly Inc., 
+                doing business as HELPUS (“us,” “we,” or “helpus”) 
+                will treat your personal information any time you come in contact with HELPUS 
+                or any HELPUS service (each a “Service” and together, the “Services”).  
+                We created this Privacy Policy (this “Policy”) to give you confidence as you visit 
+                and use the Services, and to demonstrate our commitment 
+                to fair information practices and the protection of privacy. 
+                This Policy is only applicable to the Services, 
+                and not to any other websites or services that you may be able to access from our Services, 
+                each of which may have data collection and use practices and policies 
+                that differ materially from this Policy.
             </p>
-            <h3>개인정보 활용처</h3>
+            <h3>Usages of User Information</h3>
             <p>
-                helpus는 아래와 같은 활용 목적을 가지고 사용자 개인정보를 수집합니다.
+                helpus collects user information for the following purpose:
                 <ol>
-                    <li>서비스의 기본 기능이나 특화된 기능을 제공</li>
-                    <li>개별적 공지 필요시</li>
-                    <li>서비스 이용과 관련하여 문의나 분쟁의 해결</li>
-                    <li>각종 이벤트 제공</li>             
-                    <li>법령 등에 규정된 의무의 이행</li>
-                    <li>법령이나 이용약관에 반하여 사용자에게 피해를 줄 수 있는 잘못된 이용행위의 방지</li>
+                    <li>Providing default service or specialized service</li>
+                    <li>Notifying personally</li>
+                    <li>Resolving issues and disputes</li>
+                    <li>Providing events</li>             
+                    <li>Commitment of duty to follow related laws</li>
+                    <li>Preventing abuse of the service</li>
                 </ol>
             </p>
-            <h3>수집하는 개인 정보</h3>
+            <h3>Information We Collect</h3>
                 <ol>
-                    <li>휴대폰 번호</li>
-                    <li>사용자 이름(선택적)</li>
-                    <li>프로필 사진(선택적)</li>
-                    <li>사용자 도움 분야(선택적)</li>
-                    <li>사용자 활동 지역(동 단위, 선택적)</li>             
-                    <li>사용자 도움 요청 내역</li>
-                    <li>사용자 도움 수락 내역</li>             
-                    <li>디바이스 정보(언어, 국가), 쿠기 정보</li>
+                    <li>Phone number</li>
+                    <li>username (optinal)</li>
+                    <li>Avatar (optional)</li>
+                    <li>Helping domains (optional)</li>
+                    <li>User locations (optional)</li>             
+                    <li>Got helped cases</li>
+                    <li>Helped cases</li>             
+                    <li>Device information (lanuage, country), cookies</li>
                 </ol>
-            <h3>개인정보를 수집하는 방법</h3>
+            <h3>How To Colllect Information</h3>
                 <p>
-                    helpus는 다음과 같은 방법을 통해 개인정보를 수집합니다.
+                    helpus collect user information and data using the followings:
                     <ol>
-                        <li>회원가입 및 서비스 이용 과정에서 이용자가 개인정보 수집에 대해 동의를 하고 직접 정보를 입력하는 경우</li>
-                        <li>도움 과정에서 사용자가 요청하는 것과 채팅방에 입력하는 경우</li>
-                        <li>사용자가 프로필, 도움 분야, 활동 지역을 입력하는 경우</li>
-                        <li>이벤트나 상담 서비스 참여할 경우</li>
+                        <li>When a user signs up and signs under user's agreemment</li>
+                        <li>When asking or helping, a user types in chat rooms</li>
+                        <li>When a user updates user profile, helping domains, and locations</li>
+                        <li>When a user participates in events and asks about services</li>
                     </ol>
                 </p>
-            <h3>서비스 이용 과정에서 이용자로부터 수집하는 개인정보</h3>
+            <h3>Data Are Collected By Using The Services</h3>
                 <p>
-                    앱 이용 과정에서 단말기정보(OS, 화면사이즈, 국가, 언어), 
-                    쿠키, 방문일시의 정보가 자동으로 생성되어 수집될 수 있습니다.
+                    User's device information such as OS, screen size, country, and language.
+                    Cookies and date of app usage may be collected automatically.
                 </p>
-            <h3>개인정보 공유 및 제공</h3>
+            <h3>Sharing User Information</h3>
             <p>
-                helpus는 사용자가 서비스 이용과정 등에서 따로 동의하는 경우나 법령에 규정된 경우를 제외하고는 
-                사용자 개인정보를 위에서 말씀 드린 목적 범위를 초과하여 이용하거나 제3자에게 제공 또는 공유하지 않습니다.
+                helpus never shares user's personal information without account holder's permission except related law cases.
             </p>
             <p>
-                helpus는 서비스의 원활한 제공을 위해 개인정보의 취급을 위탁하고 있습니다.
+                helpus delegates user information and usage data to the following third party for the seamless services:
                 <ul>
-                    <li>수탁업체: Google Firebase</li>
-                    <li>위탁내용: 전화번호, 도움 요청 내용, 채팅 내용, 사용자 프로필</li>
-                    <li>개인정보의 보유 및 이용기간: 회원탈퇴시까지</li>
+                    <li>Delegation Company: Google Firebase</li>
+                    <li>Delegation Contents: Phone number, Help messages, Chats, User profile</li>
+                    <li>Retention Period: Until deleting an account</li>
                 </ul>
             </p>
-            <h3>개인정보 보유기간, 파기방법 및 이용기간</h3>
+            <h3>Deletion of User Information</h3>
                 <p>
-                    사용자 개인정보는 사용자로부터 동의를 받은 수집 및 이용목적이 달성된 때에는 내부 방침 또는 
-                    관계 법령에서 정한 일정한 기간 동안 보관한 다음 파기합니다. 
-                    종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기하고, 
-                    전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다. 
+                    If you would like to review or request changes to the information 
+                    that we collect about you, 
+                    please contact us at <a href="mailto:etainclub@gmail.com">etainclub@gmail.com</a>. 
+                    If we are unable to meet your specific request, 
+                    you have the option to ask us to delete all of your information in our systems.
                 </p>
         </div>
     );

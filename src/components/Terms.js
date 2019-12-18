@@ -6,6 +6,7 @@ const Terms = () => {
     return (
         <div style={styles.container}>
             <h1>이용약관</h1>
+            <p>시행일자: 2020년 1월 1일</p>
             <p>
                 helpus 서비스를 이용해 주셔서 감사합니다. 
                 우리 동네 도움 선순환 운동 앱인 helpus의 약관을 읽어주시면 감사드리겠습니다.

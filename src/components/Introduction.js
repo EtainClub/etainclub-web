@@ -118,8 +118,7 @@ const Introduction = () => {
                 <li>{t('Introduction.header3.list5')}</li>
                 <li>{t('Introduction.header3.list6')}</li>
             </ul>
-            <p>{t('Introduction.header3.content2')}</p>
-
+            <p>{t('Introduction.header3.content3')}</p>
 
             <h2>{t('Introduction.header4.title')}</h2>
             <p>{t('Introduction.header4.content1')}</p>

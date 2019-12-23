@@ -43,7 +43,8 @@
             "list3": "Searching a term on the Internet",
             "list4": "Helping to install/setup apps and gadgets",
             "list5": "Helping to assemble PCs",
-            "list6": "Anything that can be helped"
+            "list6": "Anything that can be helped",
+            "content3": "You can help your neighbors with your skills. Finally, you will get helped when you need it. You can change your town by simply participating in this virtuous cycle."
         },
         "header4": {
             "title": "Safer Helping Movment",
@@ -75,16 +76,13 @@
         "header1": {
             "title": "Source Codes",
             "list1-1": "Homepage Code",
-            "list1-2": "App Code"
+            "list1-2": "helpus App Code"
         },
         "header2": {
             "title": "Social Media",
             "list2-1": "Facebook Page",
             "list2-2": "Facebook Group",
-            "list2-3": "Steemit",
-            "list2-4": "Medium",
             "list2-5": "Naver Cafe (Korean)", 
-            "list2-6": "Opentutorials (Korean)", 
             "list2-7": "Twitter @etainclub",           
             "list2-8": "Youtube Channel"
         },
@@ -134,9 +132,9 @@
     "Download": {
         "title": "App Download",
         "notice": "Notice",
-        "noticeContent1": "During beta test, downloads are available only through files.",
+        "noticeContent1": "During beta test, downloads are available only through files. App registration on Google Play Store is scheduled on Jan. 1, 2020",
         "noticeContent2": "You can install the app through Google Market or App Store after beta test.",
-        "versionInfoAndroid": "Android Version v0.2.0 (Android) - Neighbor Users search Implemented",
+        "versionInfoAndroid": "Android Version v0.2.4 (Android) - Do Not Disturb time, multiple languages Implemented",
         "versionInfoIOS": "iOS Version v0.1.2 - Location verification Implemented",
         "android": "Android",
         "ios": "iPhone",

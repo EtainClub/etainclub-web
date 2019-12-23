@@ -11,9 +11,9 @@ import Stories from './Stories';
 import Download from './Download';
 import Faq from './Faq';
 import Resources from './Resources';
-import Terms from './Terms';
+import Terms from './Terms-ko';
 import TermsEN from './Terms-en';
-import Privacy from './Privacy';
+import Privacy from './Privacy-ko';
 import PrivacyEN from './Privacy-en';
 
 // temp
@@ -33,9 +33,9 @@ const App = () => {
                     <Route exact path="/faq" component={Faq} />
                     <Route exact path="/download" component={Download} />
                     <Route exact path="/download2" component={Download2} />
-                    <Route exact path="/terms" component={Terms} />
+                    <Route exact path="/terms-ko" component={Terms} />
                     <Route exact path="/terms-en" component={TermsEN} />
-                    <Route exact path="/privacy" component={Privacy} />
+                    <Route exact path="/privacy-ko" component={Privacy} />
                     <Route exact path="/privacy-en" component={PrivacyEN} />
                 </Suspense>
             </div>

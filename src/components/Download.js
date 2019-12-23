@@ -38,14 +38,14 @@ const Download = () => {
     const downloadAndroid64 = () => {
         var link = document.createElement("a");
         // v0.2.0
-        link.href = "https://firebasestorage.googleapis.com/v0/b/helpus-206eb.appspot.com/o/apk%2Fhelpus-arm64-v8a-release.apk?alt=media&token=84a2730d-4ca6-4ed7-b10a-cc9e87976008";
+        link.href = "https://firebasestorage.googleapis.com/v0/b/helpus-206eb.appspot.com/o/apk%2Fhelpus-arm64-v8a-release.apk?alt=media&token=76704a38-bfbb-4105-945d-eace6f7488a8";
         link.click();
     };
 
     const downloadAndroid32 = () => {
         var link = document.createElement("a");
         // v0.2.0
-        link.href = "https://firebasestorage.googleapis.com/v0/b/helpus-206eb.appspot.com/o/apk%2Fhelpus-armeabi-v7a-release.apk?alt=media&token=96762eab-caad-41bb-ae06-1b5af652ec9f";
+        link.href = "https://firebasestorage.googleapis.com/v0/b/helpus-206eb.appspot.com/o/apk%2Fhelpus-armeabi-v7a-release.apk?alt=media&token=b9ad5302-8ecf-47fa-aa3b-9d3a09c098ca";
         link.click();
     };
 

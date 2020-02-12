@@ -133,14 +133,14 @@
     "Download": {
         "title": "앱 다운로드",
         "notice": "다운로드 안내",
-        "noticeContent1": "베타 테스트 동안 다운로드는 파일 형태로만 지원됩니다. 정규 버전은 2020년 1월 등록 예정(안드로이드)",
-        "noticeContent2": "베타 테스트가 종료되면 구글 마켓이나 앱 스토어에서 설치하실 수 있습니다.",
-        "versionInfoAndroid": "안드로이드 버전 v0.2.4 - 방해금지, 다중언어 지원, 전화번호 인증 로그인",
+        "noticeContent1": "안드로이드 버전 출시되었습니다!",
+        "noticeContent2": "iOS 출시는 2020년 2월 중 예정",
+        "versionInfoAndroid": "안드로이드 버전 v1.0.6",
         "versionInfoIOS": "iOS 버전 v0.1.2 - 지역 인증 기능 추가",
         "android": "안드로이드",
         "ios": "아이폰",
         "download32": "32bit 다운로드",
-        "download64": "64bit 다운로드",
+        "download64": "다운로드",
         "androidInstall": "안드로이드 설치 방법",
         "setting": "설정 -> 생체 인식 및 보안 -> 출처를 알 수 없는 앱 설치 허용"
     }

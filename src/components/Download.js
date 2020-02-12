@@ -37,8 +37,8 @@ const Download = () => {
     const {t} = useTranslation();
     const downloadAndroid64 = () => {
         var link = document.createElement("a");
-        // v0.2.0
-        link.href = "https://firebasestorage.googleapis.com/v0/b/helpus-206eb.appspot.com/o/apk%2Fhelpus-arm64-v8a-release.apk?alt=media&token=76704a38-bfbb-4105-945d-eace6f7488a8";
+        // v1.0.6
+        link.href = "https://play.google.com/store/apps/details?id=club.etain.helpus";
         link.click();
     };
 
@@ -160,13 +160,6 @@ const Download = () => {
                         onClick={downloadAndroid64}
                     >
                         {t('Download.download64')}
-                    </Button>
-                    <Button 
-                        primary 
-                        style={{ margin: 7 }}
-                        onClick={downloadAndroid32}
-                    >
-                        {t('Download.download32')}
                     </Button>
                 </div>
                 <div style={styles.columnContainer}>

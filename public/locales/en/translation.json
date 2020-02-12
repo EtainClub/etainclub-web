@@ -132,14 +132,14 @@
     "Download": {
         "title": "App Download",
         "notice": "Notice",
-        "noticeContent1": "During beta test, downloads are available only through files. App registration on Google Play Store is scheduled on Jan. 1, 2020",
-        "noticeContent2": "You can install the app through Google Market or App Store after beta test.",
-        "versionInfoAndroid": "Android Version v0.2.4 (Android) - Do Not Disturb time, multiple languages Implemented",
-        "versionInfoIOS": "iOS Version v0.1.2 - Location verification Implemented",
+        "noticeContent1": "Now the Android version is avaliable on Google Play",
+        "noticeContent2": "iPhone version is scheduled to be registered during Feb. 2020",
+        "versionInfoAndroid": "Android Version v1.0.6 (Google Play)",
+        "versionInfoIOS": "iPhone Version v0.1.2 (TestFlight)",
         "android": "Android",
         "ios": "iPhone",
         "download32": "32bit Download",
-        "download64": "64bit Download",
+        "download64": "Download",
         "androidInstall": "How to install the app for Android phones",
         "setting": "Settings -> Biometrics and security -> Install unkonw apps"
     }

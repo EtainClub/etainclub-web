@@ -4,8 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { Button } from 'semantic-ui-react';
 //// images
 // korean android
-import image1 from '../images/ko/download/android.jpg';
-import image1M from '../images/ko/download/android_m.jpg';
+import image1 from '../images/ko/download/android.png';
+import image1M from '../images/ko/download/android_m.png';
 import image2 from '../images/ko/download/android_install_1.jpg';
 import image2M from '../images/ko/download/android_install_1_m.jpg';
 import image3 from '../images/ko/download/android_install_2.jpg';
@@ -20,7 +20,7 @@ import image7 from '../images/ko/download/android_install_6.jpg';
 import image7M from '../images/ko/download/android_install_6_m.jpg';
 // korean ios
 import imageIOS1 from '../images/ko/download/ios.png';
-import imageIOS1M from '../images/ko/download/ios.png';
+import imageIOS1M from '../images/ko/download/ios_m.png';
 
 // english android
 import imageEN1 from '../images/en/download/android.jpg';
@@ -28,30 +28,32 @@ import imageEN1M from '../images/en/download/android_m.png';
 
 // english ios
 import imageENIOS1 from '../images/en/download/ios.png';
-import imageENIOS1M from '../images/en/download/ios.png';
+import imageENIOS1M from '../images/en/download/ios_m.png';
 
 //import image1_en from '../images/en/download/android_install.png';
 //import image1M_en from '../images/en/download/contracts_diagram_m.png';
+
+//https://play.google.com/store/apps/details?id=club.etain.helpus
 
 const Download = () => {
     const {t} = useTranslation();
     const downloadAndroid64 = () => {
         var link = document.createElement("a");
-        // v1.0.6
-        link.href = "https://play.google.com/store/apps/details?id=club.etain.helpus";
+        // v1.7.2
+        link.href = 'https://firebasestorage.googleapis.com/v0/b/helpus-206eb.appspot.com/o/apk%2Fhelpus-v1.7.2-arm64-v8a-release.apk?alt=media&token=e21bcdae-6cac-4d11-9702-abe7a20b35be';
         link.click();
     };
 
     const downloadAndroid32 = () => {
         var link = document.createElement("a");
-        // v0.2.0
-        link.href = "https://firebasestorage.googleapis.com/v0/b/helpus-206eb.appspot.com/o/apk%2Fhelpus-armeabi-v7a-release.apk?alt=media&token=b9ad5302-8ecf-47fa-aa3b-9d3a09c098ca";
+        // v1.7.2
+        link.href = "https://firebasestorage.googleapis.com/v0/b/helpus-206eb.appspot.com/o/apk%2Fhelpus-v1.7.2-armeabi-v7a-release.apk?alt=media&token=c9f48fa8-6ddf-46c4-97f8-7baf5c2b0d84";
         link.click();
     };
 
     const downloadIOS = () => {
         var link = document.createElement("a");
-        link.href = "https://testflight.apple.com/join/3JdIg0MP";
+        link.href = 'https://apps.apple.com/us/app/helpus-instant-help-in-town/id1496615309?app=itunes&ign-mpt=uo%3D4';
         link.click();
     }
 
@@ -146,7 +148,6 @@ const Download = () => {
             <div>
                 <h1 style={{ textAlign: 'center', color: 'red' }}>{t('Download.notice')}</h1>
                 <h2 style={{ textAlign: 'center', color: 'blue' }}>{t('Download.noticeContent1')}</h2>
-                <h3 style={{ textAlign: 'center', color: 'black' }}>{t('Download.noticeContent2')}</h3>
                 <h3 style={{ textAlign: 'center', color: 'black' }}>{t('Download.versionInfoAndroid')}</h3>
                 <h3 style={{ textAlign: 'center', color: 'black' }}>{t('Download.versionInfoIOS')}</h3>
                 <hr />
@@ -160,6 +161,13 @@ const Download = () => {
                         onClick={downloadAndroid64}
                     >
                         {t('Download.download64')}
+                    </Button>
+                    <Button 
+                        primary 
+                        style={{ margin: 7 }}
+                        onClick={downloadAndroid32}
+                    >
+                        {t('Download.download32')}
                     </Button>
                 </div>
                 <div style={styles.columnContainer}>

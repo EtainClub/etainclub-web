@@ -19,7 +19,7 @@
         "language": "언어"
     },
     "Home": {
-        "videoTitle": "How Does This Work? See Be My Eyes Video"
+        "videoTitle": "How Does This Work? It is working like a Uber taxi app."
     },
     "Introduction": {
         "header1": {
@@ -132,14 +132,13 @@
     "Download": {
         "title": "App Download",
         "notice": "Notice",
-        "noticeContent1": "Now the Android version is avaliable on Google Play",
-        "noticeContent2": "iPhone version is scheduled to be registered during Feb. 2020",
-        "versionInfoAndroid": "Android Version v1.0.6 (Google Play)",
-        "versionInfoIOS": "iPhone Version v0.1.2 (TestFlight)",
+        "noticeContent1": "Now both the Android and ios version are avaliable on Google Play and Apple App Store. Those who cannot access Google Play can download APK file below.",
+        "versionInfoAndroid": "Search 'helpus' in Google Play Store",
+        "versionInfoIOS": "Search 'helpus' in Apple App Store",
         "android": "Android",
         "ios": "iPhone",
-        "download32": "32bit Download",
-        "download64": "Download",
+        "download32": "32bit APK Download",
+        "download64": "64bit APK Download",
         "androidInstall": "How to install the app for Android phones",
         "setting": "Settings -> Biometrics and security -> Install unkonw apps"
     }

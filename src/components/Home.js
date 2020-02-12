@@ -5,16 +5,20 @@ import { useTranslation } from 'react-i18next';
 //// images
 // korean
 import image1 from '../images/occupation.png';
-import image2 from '../images/ko/home/android.jpg';
+import image2 from '../images/ko/home/android.png';
 // korean mobile
 import image1M from '../images/occupation_m.png';
-import image2M from '../images/ko/home/android_m.jpg';
+import image2M from '../images/ko/home/android_m.png';
 // english
 import imageEN1 from '../images/occupation.png';
 import imageEN2 from '../images/en/home/ios.png';
 // korean mobile
 import imageEN1M from '../images/occupation_m.png';
 import imageEN2M from '../images/en/home/ios.png';
+
+// video url
+const videoUrlKo = 'https://www.youtube.com/embed/RJ9WhK4SQi8';
+const videoUrlEn = 'https://www.youtube.com/embed/WkgzsaSAtNo';
 
 const Home = () => {
     const {t} = useTranslation();
@@ -29,12 +33,14 @@ const Home = () => {
         // default image url : korean web
         let image1Url = image1;
         let image2Url = image2;
+        let videoUrl = videoUrlEn;
         switch (language) {
             case 'ko':
                 if (mobile) {
                     image1Url = image1M;
                     image2Url = image2M;
                 }
+                videoUrl = videoUrlKo;
                 break;
             case 'en':
                 if (mobile) {
@@ -44,6 +50,7 @@ const Home = () => {
                     image1Url = imageEN1;
                     image2Url = imageEN2;
                 }
+                videoUrl = videoUrlEn;
                 break;
             default: 
                 break;
@@ -69,7 +76,7 @@ const Home = () => {
                         <iframe
                             width="400" 
                             height="225" 
-                            src="https://www.youtube.com/embed/6GRfFuWsjNU" 
+                            src={videoUrl} 
                             frameborder="0" 
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen
@@ -97,7 +104,7 @@ const Home = () => {
                     <iframe
                         width="560" 
                         height="315" 
-                        src="https://www.youtube.com/embed/6GRfFuWsjNU" 
+                        src={videoUrl}
                         frameborder="0" 
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen
@@ -131,7 +138,8 @@ const styles = {
         justifyContent: 'center',
     },
     img: {
-        width: 600
+        width: 600,
+        height: 424
     }
 }
 export default Home;

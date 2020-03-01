@@ -139,6 +139,8 @@
         "ios": "iPhone",
         "download32": "32bit APK Download",
         "download64": "64bit APK Download",
+        "googlePlay": "Google Play Link",
+        "appStore": "Apple App Store Link",
         "androidInstall": "How to install the app for Android phones",
         "setting": "Settings -> Biometrics and security -> Install unkonw apps"
     }

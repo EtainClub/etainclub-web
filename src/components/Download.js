@@ -37,17 +37,23 @@ import imageENIOS1M from '../images/en/download/ios_m.png';
 
 const Download = () => {
     const {t} = useTranslation();
+    const downloadGooglePlay= () => {
+        var link = document.createElement("a");
+        // v2.1.0
+        link.href = 'https://play.google.com/store/apps/details?id=club.etain.helpus';
+        link.click();
+    };
     const downloadAndroid64 = () => {
         var link = document.createElement("a");
-        // v1.7.2
-        link.href = 'https://firebasestorage.googleapis.com/v0/b/helpus-206eb.appspot.com/o/apk%2Fhelpus-v1.7.2-arm64-v8a-release.apk?alt=media&token=e21bcdae-6cac-4d11-9702-abe7a20b35be';
+        // v2.1.0
+        link.href = 'https://firebasestorage.googleapis.com/v0/b/helpus-206eb.appspot.com/o/apk%2Fhelpus-2.1.0-arm64-v8a-release.apk?alt=media&token=fe5f316e-5fbf-471a-9ab1-9ec2215988eb';
         link.click();
     };
 
     const downloadAndroid32 = () => {
         var link = document.createElement("a");
-        // v1.7.2
-        link.href = "https://firebasestorage.googleapis.com/v0/b/helpus-206eb.appspot.com/o/apk%2Fhelpus-v1.7.2-armeabi-v7a-release.apk?alt=media&token=c9f48fa8-6ddf-46c4-97f8-7baf5c2b0d84";
+        // v2.1.0
+        link.href = "https://firebasestorage.googleapis.com/v0/b/helpus-206eb.appspot.com/o/apk%2Fhelpus-2.1.0-armeabi-v7a-release.apk?alt=media&token=1a2d0ce0-b744-4898-87ad-73d8670f7115";
         link.click();
     };
 
@@ -148,13 +154,19 @@ const Download = () => {
             <div>
                 <h1 style={{ textAlign: 'center', color: 'red' }}>{t('Download.notice')}</h1>
                 <h2 style={{ textAlign: 'center', color: 'blue' }}>{t('Download.noticeContent1')}</h2>
-                <h3 style={{ textAlign: 'center', color: 'black' }}>{t('Download.versionInfoAndroid')}</h3>
-                <h3 style={{ textAlign: 'center', color: 'black' }}>{t('Download.versionInfoIOS')}</h3>
                 <hr />
             <div style={styles.rowContainer}>
                 <div style={styles.columnContainer}>
                     <h2 style={{ textAlign: 'center' }}>{t('Download.android')}</h2>
                     <img alt="" height={imgHeight} src={img1Url} />
+                    <Button 
+                        primary 
+                        style={{ margin: 7 }}
+                        onClick={downloadGooglePlay}
+                    >
+                        {t('Download.googlePlay')}
+                    </Button>
+
                     <Button 
                         primary 
                         style={{ margin: 7 }}
@@ -178,7 +190,7 @@ const Download = () => {
                         style={{ margin: 7 }}
                         onClick={downloadIOS}
                     >
-                        {t('download')}
+                        {t('Download.appStore')}
                     </Button>
                 </div>
             </div>
